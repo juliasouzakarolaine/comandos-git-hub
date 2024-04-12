@@ -1,0 +1,167 @@
+
+Comandos Git Básicos:
+
+1.git init: Inicializa um novo repositório Git.
+2.git clone <url>: Clona um repositório Git existente para sua máquina local.
+3,git add <arquivo>: Adiciona arquivos ao índice (staging area) para prepará-los para commit.
+4.git commit -m "<mensagem>": Registra uma nova versão dos arquivos no repositório.
+5.git status: Mostra o estado atual do repositório.
+6.git log: Mostra o histórico de commits.
+7.git push: Envia commits para o repositório remoto.
+8.git pull: Puxa as alterações do repositório remoto para a sua máquina local.
+9.git branch: Lista todas as branches locais.
+10.git checkout -b <nome_branch>: Cria uma nova branch e muda para ela.
+11.git merge <nome_branch>: Mescla uma branch na branch atual.
+12.git remote add origin <url>: Adiciona um repositório remoto.
+13.git remote -v: Lista todos os repositórios remotos.
+14.git fetch: Obtém as últimas alterações do repositório remoto.
+15.git diff: Mostra as diferenças entre commits, branches ou arquivos.
+
+Comandos Avançados do Git:
+
+16.git rebase: Reorganiza o histórico de commits.
+17.git reset: Volta para um commit específico.
+18.git cherry-pick: Seleciona e aplica um único commit de uma branch para outra.
+19.git stash: Guarda temporariamente as mudanças não commitadas.
+20.git bisect: Ajuda a encontrar o commit que introduziu um bug.
+21.git tag: Cria, lista ou verifica tags.
+
+Comandos do GitHub:
+
+22.git remote show origin: Mostra informações sobre o repositório remoto.
+23.git pull --rebase: Puxa as alterações do repositório remoto e faz rebase com suas alterações locais.
+24.git push --force: Força o envio de commits para o repositório remoto, sobrescrevendo o histórico existente.
+25.git clone --recursive: Clona um repositório com seus submódulos.
+26.git submodule update --init --recursive: Inicializa e atualiza submódulos em um repositório clonado.
+27.git fetch --prune: Remove referências locais de branches remotas excluídas.
+28.git merge --no-ff: Realiza um merge preservando a história de commits.
+29.git shortlog: Sumariza contribuições de cada autor.
+30.git blame <arquivo>: Mostra quem modificou cada linha de um arquivo.
+31.git archive: Cria um arquivo zip ou tarball de um repositório.
+32.git reflog: Registra todas as operações HEAD.
+33.GitHub Workflow:
+34.Forking: Copiar um repositório para sua própria conta.
+35.Pull Request (PR): Solicitar que suas alterações sejam mescladas em um repositório principal.
+36.Code Review: Revisar e comentar as alterações propostas em um PR.
+37.Issues: Rastrear problemas, sugestões e tarefas.
+38.Labels: Categorizar e filtrar issues e PRs.
+39.Milestones: Agrupar issues relacionadas por versão ou objetivo.
+40.Projects: Gerenciar tarefas e acompanhamento de progresso.
+41.GitHub Actions: Automatizar tarefas com base em eventos de repositório.
+
+Colaboração:
+
+42.git fetch <remoto>: Obtém as alterações de um repositório remoto específico.
+43.git checkout <remoto>/<branch>: Cria uma branch local que acompanha uma branch remota.
+44.git push <remoto> <branch>: Envia uma branch local para um repositório remoto específico.
+45.git merge <remoto>/<branch>: Mescla uma branch remota na branch local atual.
+46.git pull-request: Abre um PR na linha de comando.
+
+Gerenciamento de Configurações:
+
+47.git config: Configura opções do Git.
+48.git config --global: Configura opções globalmente.
+49.git config --list: Lista todas as configurações do Git.
+
+Trabalhando com História de Commits:
+
+50.git log --author="<nome>": Filtra os commits por autor.
+51.git log --grep="<termo>": Filtra os commits por mensagem.
+52.git log <arquivo>: Mostra o histórico de commits específico para um arquivo.
+53.git blame <arquivo> -L <linha_inicio>,<linha_fim>: Mostra quem modificou cada linha em um intervalo específico.
+
+Ignorando Arquivos:
+
+54..gitignore: Especifica arquivos e diretórios a serem ignorados pelo Git.
+55.Gerenciando Branches:
+56.git branch -d <nome_branch>: Deleta uma branch local.
+57.git push origin --delete <nome_branch>: Deleta uma branch remota.
+
+Resolução de Conflitos:
+
+58.git mergetool: Abre uma ferramenta para ajudar a resolver conflitos de merge.
+59.git diff --base <arquivo>: Mostra as diferenças entre o arquivo atual, o ancestral comum e a versão do outro desenvolvedor.
+
+Revisão de Alterações:
+
+60.git log -p: Mostra as diferenças introduzidas em cada commit.
+61.git diff <commit1> <commit2>: Mostra as diferenças entre dois commits.
+
+Personalização:
+
+62.git config --global alias.<alias> "<comando>": Cria alias para comandos Git.
+
+Anotações:
+
+63.git notes: Adiciona ou lê anotações associadas a um commit.
+64.git log --show-notes: Mostra anotações em commits.
+65.Refatoração de História:
+66.git rebase -i <commit>: Reescreve o histórico de commits interativamente.
+67.git commit --amend: Modifica o commit mais recente.
+
+Trabalhando com Submódulos:
+
+68.git submodule add <url>: Adiciona um submódulo ao reposit
+
+Trabalhando com Submódulos (cont.):
+
+69.git submodule add <url>: Adiciona um submódulo ao repositório.
+70.git submodule init: Inicializa os submódulos no repositório clonado.
+71.git submodule update: Atualiza os submódulos para a última versão.
+72.git submodule status: Mostra o status dos submódulos.
+73.git submodule foreach <comando>: Executa um comando em cada submódulo.
+
+Trabalhando com Tags:
+
+74.git tag <tagname>: Cria uma tag para o commit atual.
+75.git tag -a <tagname> -m "<mensagem>": Cria uma tag anotada com uma mensagem.
+76.git tag -l: Lista todas as tags.
+77.git show <tagname>: Mostra informações sobre uma tag específica.
+
+Trabalhando com Remotos:
+
+78.git remote rename <nome_antigo> <nome_novo>: Renomeia um repositório remoto.
+79.git remote rm <nome>: Remove um repositório remoto.
+80.git remote set-url <nome> <nova_url>: Atualiza a URL de um repositório remoto.
+81.git remote prune <nome>: Remove branches locais que não existem mais no repositório remoto.
+82.git remote update: Atualiza as informações do repositório remoto.
+
+Personalização e Configuração:
+
+83.git config --global core.editor <editor>: Configura o editor padrão para mensagens de commit.
+84.git config --global color.ui auto: Habilita a coloração na saída do Git.
+85.git config --global user.name "<nome>": Configura o nome de usuário.
+86.git config --global user.email "<email>": Configura o email do usuário.
+
+Trabalhando com Cherry-Pick:
+
+87.git cherry-pick <commit>: Aplica as alterações introduzidas por um commit em outra branch.
+88.git cherry-pick -n <commit>: Aplica as alterações do commit sem fazer o commit imediatamente.
+89.git cherry-pick --continue: Continua após resolver um conflito durante cherry-pick.
+90.git cherry-pick --abort: Aborta o processo de cherry-pick.
+
+Trabalhando com Rebase:
+
+91.git rebase <branch>: Reorganiza os commits da branch atual sobre a branch especificada.
+92.git rebase --onto <nova_base> <antiga_base>: Reorganiza os commits a partir de uma nova base.
+93.git rebase --continue: Continua após resolver um conflito durante o rebase.
+94.git rebase --abort: Aborta o processo de rebase.
+
+Trabalhando com Reflog:
+
+95.git reflog expire --expire=<tempo>: Limpa o reflog de commits antigos.
+96.git reflog show: Mostra o histórico de referências, incluindo HEAD e índice.
+97.git reflog delete <referência>: Deleta entradas específicas do reflog.
+
+Trabalhando com Worktrees:
+
+98.git worktree add <path> <branch>: Cria uma nova worktree a partir de uma branch existente.
+99.git worktree list: Lista todas as worktrees associadas ao repositório.
+100.git worktree remove <path>: Remove uma worktree do repositório.
+
+Comandos Avançados de Merge:
+
+101.git merge --squash <branch>: Combina os commits de uma branch em um único commit.
+102.git merge --no-commit: Realiza um merge sem fazer o commit automaticamente.
+103.git merge --strategy=<estratégia>: Especifica a estratégia de merge a ser usada.
+104.git merge --abort: Aborta o processo de merge e restaura o estado antes do merge.
